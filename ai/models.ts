@@ -9,23 +9,12 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
-    id: 'gpt-4o-mini',
-    label: 'GPT 4o mini',
-    apiIdentifier: 'gpt-4o-mini',
-    description: 'Small model for fast, lightweight tasks',
-  },
-  {
-    id: 'gpt-4o',
-    label: 'GPT 4o',
-    apiIdentifier: 'gpt-4o',
-    description: 'For complex, multi-step tasks',
-  },
-  {
-    id: 'gpt-4o-canvas',
-    label: 'GPT 4o with Canvas',
-    apiIdentifier: 'gpt-4o',
-    description: 'Collaborate with writing',
+    id: 'anthropic.claude-3-5-sonnet-20240620-v1:0',
+    label: 'Claude 3.5 Sonnet',
+    apiIdentifier: 'anthropic.claude-3-5-sonnet-20240620-v1:0',
+    description: 'Great model',
   },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'gpt-4o-mini';
+export const DEFAULT_MODEL_NAME: string =
+  'anthropic.claude-3-5-sonnet-20240620-v1:0';
